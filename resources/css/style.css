@@ -50,7 +50,6 @@ section {
 }
 
 /* ------ HEADINGS ------ */
-
 h1,
 h2,
 h3 {
@@ -90,7 +89,6 @@ h2::after {
 }
 
 /* ------ PARAGRAPHS ------ */
-
 .long-copy {
   line-height: 145%;
   width: 70%;
@@ -103,7 +101,6 @@ h2::after {
 }
 
 /* ------ ICONS ------ */
-
 .icon-big {
   font-size: 320%;
   display: block;
@@ -111,8 +108,36 @@ h2::after {
   margin-bottom: 10px;
 }
 
-/* ------ BUTTONS ------ */
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  /* secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
 
+/* ------ LINKS ------ */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: color 0.2s, border-bottom-color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom-color: transparent;
+}
+
+/* ------ BUTTONS ------ */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -163,6 +188,8 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .hero-text-box {
@@ -298,12 +325,70 @@ header {
   margin-right: 25px;
 }
 
-.btn-app {
-  text-decoration: none;
+.btn-app:link,
+.btn-app:visited {
+  border-bottom: none;
 }
 
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ------------------------------------------------------ */
+/* CITIES */
+/* ------------------------------------------------------ */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-detail {
+  margin-bottom: 5px;
+}
+
+/* ------------------------------------------------------ */
+/* TESTIMONIALS */
+/* ------------------------------------------------------ */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
