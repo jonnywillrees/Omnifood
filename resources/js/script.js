@@ -59,3 +59,14 @@ $(".js--wp-4").waypoint(
   },
   { offset: "60%" }
 );
+
+// Mobile navigation
+$(".mobile-nav-icon").click(function () {
+  var nav = $(".main-nav");
+  nav.slideToggle(200);
+
+  var hamburgerIcon = $(".hamburger-btn");
+  hamburgerIcon.attr("name", function (index, attr) {
+    return attr === "menu-outline" ? "close-outline" : "menu-outline";
+  });
+});
