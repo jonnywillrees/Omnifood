@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
   </head>
@@ -18,31 +22,36 @@
       ======= HEADER =======
      -->
     <header>
-      <nav>
+      <nav id="top-nav">
         <div class="row">
           <img
             class="logo"
             src="resources/img/logo-white.png"
             alt="Omnifood logo"
           />
+          <img
+            class="logo-black"
+            src="resources/img/logo.png"
+            alt="Omnifood logo"
+          />
           <ul class="nav main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#subscriptions">Sign up</a></li>
           </ul>
         </div>
       </nav>
       <div class="hero-text-box">
         <h1>Goodbye junk food.<br />Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a id="scroll-to-plan" class="btn btn-full" href="#">I’m hungry</a>
+        <a id="scroll-to-start" class="btn btn-ghost" href="#">Show me more</a>
       </div>
     </header>
     <!-- 
       ======= FEATURES SECTION =======
      -->
-    <section class="section-features">
+    <section id="features" class="section-features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">
@@ -51,7 +60,7 @@
           we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
           <h3>Up to 365 days/year</h3>
@@ -163,14 +172,14 @@
     <!-- 
       ======= STEPS SECTION =======
      -->
-    <section class="section-steps">
+    <section id="how-it-works" class="section-steps">
       <div class="row">
         <h2>How is works &mdash; Simple as 1, 2, 3</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-2 steps-box">
           <img
-            class="app-screen"
+            class="app-screen js--wp-2"
             src="resources/img/app-iPhone.png"
             alt="Omnifood app on iPhone"
           />
@@ -208,12 +217,14 @@
         </div>
       </div>
     </section>
-
-    <section class="cities">
+    <!-- 
+      ======= CITIES SECTION =======
+     -->
+    <section id="cities" class="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
-      <div class="row">
+      <div class="row js--wp-3">
         <!-- CITY OF LISBON -->
         <div class="col span-1-of-4 box">
           <img src="resources/img/lisbon-3.jpg" alt="Photo of Lisbon" />
@@ -287,6 +298,9 @@
         </div>
       </div>
     </section>
+    <!-- 
+      ======= TESTIMONIALS SECTION =======
+     -->
     <section class="section-testimonials">
       <div class="row">
         <h2>Our customers can't live without us</h2>
@@ -327,7 +341,10 @@
         </div>
       </div>
     </section>
-    <section class="section-plans">
+    <!-- 
+      ======= SUBSCRIPTIONS SECTION =======
+     -->
+    <section id="subscriptions" class="section-plans">
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
@@ -336,7 +353,7 @@
             PREMIUM PLAN 
           -->
         <div class="col span-1-of-3">
-          <div class="card">
+          <div class="card js--wp-4">
             <div>
               <h3>Premium</h3>
               <span class="plan-price">$399 <span>per month</span></span>
@@ -471,6 +488,9 @@
         </div>
       </div>
     </section>
+    <!-- 
+      ======= FORM SECTION =======
+     -->
     <section class="section-form">
       <div class="row">
         <h2>We're happy to hear from you</h2>
@@ -549,6 +569,9 @@
         </form>
       </div>
     </section>
+    <!-- 
+      ======= FOOTER =======
+     -->
     <footer>
       <div class="row">
         <nav>
@@ -591,6 +614,16 @@
         <p>Copyright &copy; 2020 by Omnifood. All rights reserved.</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>

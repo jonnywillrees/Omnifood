@@ -228,6 +228,15 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* MAIN NAVI */
 .main-nav {
   float: right;
   margin-top: 55px;
@@ -250,6 +259,34 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* STICKY NAVI */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 16px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+.sticky .logo-black {
+  display: block;
 }
 
 /* ------------------------------------------------------ */
@@ -555,4 +592,25 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 20px;
+}
+
+/* ------------------------------------------------------ */
+/* FORM */
+/* ------------------------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1.3s;
+}
+
+.js--wp-4 {
+  animation-duration: 1.3s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated {
+  opacity: 1;
 }
