@@ -538,8 +538,25 @@ input[type="checkbox"] {
   margin: 10px 5px 10px 0;
 }
 
+.form-messages {
+  width: 55%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.success {
+  background-color: rgba(55, 235, 91, 0.85);
+}
+
+.error {
+  background-color: rgba(219, 39, 39, 0.85);
+}
+
 /* ------------------------------------------------------ */
-/* FORM */
+/* FOOTER 
 /* ------------------------------------------------------ */
 
 footer {
@@ -606,7 +623,7 @@ footer p {
 }
 
 /* ------------------------------------------------------ */
-/* FORM */
+/* SCROLL ANIMATIONS */
 /* ------------------------------------------------------ */
 
 .js--wp-1,
